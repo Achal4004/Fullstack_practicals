@@ -90,8 +90,8 @@
     width:20vw;
 }
 #footer {
-    background-color:pink;
-    color:#fff;
+    background-color:grey;
+    color:rgb(245, 163, 163);
     display:flex;
     justify-content: center;
     align-items: center;
