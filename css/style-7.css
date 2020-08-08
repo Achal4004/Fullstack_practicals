@@ -10,7 +10,7 @@
     background-color: white;
 }
 #header {
-    background-color:#a0a0a0;
+    background-color:lightgray;
     border:2px solid #b0b0b0;
     color:#fff;
     display:flex;
@@ -25,7 +25,7 @@
     color:white;
     display:flex;
     justify-content: center;
-    height:88vh;
+    height:100vh;
     margin-bottom: 20px;
 }
 
@@ -91,7 +91,7 @@
 }
 #footer {
     background-color:grey;
-    color:rgb(245, 163, 163);
+    color:white;
     display:flex;
     justify-content: center;
     align-items: center;
