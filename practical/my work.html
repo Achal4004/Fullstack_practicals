@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<style>
+    *{  padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        background-color: grey;
+        padding: 0 20px;
+        width: 100%;
+        height: 70px;
+    }
+    .header h2{
+        line-height: 70px;
+        text-transform: uppercase;
+        float: left;
+        color: white;
+    }
+    #chk{
+        visibility: hidden;
+        position: absolute;
+        z-index: -10;
+    }
+    .header .menu{
+        float: right;
+        list-style: none;
+        
+    }
+    .menu li{
+        display: inline;
+        line-height: 70px;
+    }
+    .menu li a {
+        text-decoration:none ;
+        color:white;
+        font-size: 20; 
+        text-transform: uppercase;
+        margin: 10px;
+        padding: 10px;
+        margin-left: 0px;
+        padding-right: 0px;
+
+    }
+    .showbtn,.hidebtn{
+        color: white;
+        line-height: 70px;
+        float: right;
+        display: none;
+        font-size: 30px;
+    }
+    .menu li a:hover ,.showbtn:hover,.hidebtn:hover {
+        color: skyblue;
+    }
+  
+
+    @media (max-width: 800px) {
+        .showbtn,.hidebtn{
+        display: block;
+        }
+        #chk:checked ~ .menu{
+            right:0;
+        }
+        .home,.about,.contact{
+            
+            display: block;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+        position: fixed;
+        top: 0;
+        right:-100%;
+        width:100% ;
+        line-height: normal;
+        height: 100vh;
+        padding:80px 0 ;
+        transition: .7s;
+        background-color: black;
+            text-align: center;
+    }
+    .menu li{
+        display: block;
+        
+    }
+    .menu a{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .hidebtn{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    }
+    .content{
+        padding: 20px 0 ;
+    }
+    .content img{
+        width: 100%;
+        max-width: 700px;
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .content p{
+        text-align:justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   
+    </style>    
+
+<body>
+    <div class="header">
+        <h2>Movie-Mania</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="showbtn">
+            <i class="fa fa-bars" ></i>
+        </label>
+        <ul class="menu">
+           <li><label for="chk" class="home">
+            <i class="fa fa-home" ></i>
+        </label>
+                <a href="#">Home</a>
+            
+        </li>
+           <li><label for="chk" class="about">
+            <i class="fa fa-question-circle"></i></label>
+            <a href="#">About</a></li>
+           <li> <label for="chk" class="contact">
+            <i class="fa fa-volume-control-phone" ></i>
+            </label>
+               <a href="#">Contact</a></li>
+           <li> <a href="#">Services</a></li>
+           <li> <a href="#">Here</a></li>
+           <label for="chk" class="hidebtn">
+            <i class="fa fa-times" ></i>
+        </label>
+        </ul>
+    </div>
+    <div class="content">
+    <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/proximasurface.jpg" alt="image of nasa daily image">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo labore eligendi nam mollitia ut, qui non obcaecati nesciunt voluptas atque molestias vitae modi molestiae, ullam quam doloremque libero. Ab voluptatibus hic recusandae ratione quae unde maxime quidem porro exercitationem odio alias laudantium, dolore id doloremque reiciendis soluta incidunt ut vel ipsa cupiditate neque! Dolores, nesciunt! Labore dolores sed illum laboriosam at minima tempora voluptates non voluptatibus officiis dolore voluptatem officia modi, sint harum nulla blanditiis, commodi quidem molestias dicta. Dolor, accusantium, fuga doloremque repellendus, voluptatum ullam doloribus pariatur porro aperiam minima quia reiciendis aspernatur? Aut, autem reiciendis a voluptatum dolorem tempore soluta consectetur suscipit quaerat, odio doloribus. Accusamus temporibus natus sunt sapiente porro consequuntur asperiores voluptates quasi quos, nihil laborum consequatur nobis quis! Libero ab odio, adipisci est, voluptatem cupiditate exercitationem aspernatur, iste ipsam optio sit repellat. Obcaecati, veritatis adipisci sequi pariatur repudiandae tenetur eos deserunt laudantium libero ullam corrupti quis quasi iste earum quas consequuntur at illo quibusdam mollitia voluptas ex, consequatur laboriosam reprehenderit. Soluta omnis facere obcaecati minima error accusantium maiores officiis dolor tempora, nobis distinctio alias similique eius modi, esse eaque provident fuga rem natus numquam! Ipsum quidem facilis voluptate perspiciatis! Distinctio maiores est exercitationem possimus dolores, quidem quam quas culpa. Consectetur ratione suscipit laudantium ut nulla iure dolore odio voluptas eum soluta sed, consequuntur ducimus id saepe adipisci commodi repellat cumque earum quod quam. Eligendi laboriosam repellat repudiandae sed, earum tenetur quaerat cumque quidem minus corrupti et est impedit accusamus tempora deserunt asperiores iste, adipisci blanditiis quam error. Ab nostrum minima enim, officiis tenetur at eos, vel sint laborum hic exercitationem. Sit tempora vel aut modi facere, rerum, beatae quasi et mollitia necessitatibus deserunt perspiciatis dolor cumque eum adipisci quam provident distinctio magni? Debitis inventore porro sed a doloribus ab unde cumque molestiae fugiat aspernatur dolorem, sunt ad totam suscipit at neque dolor tempora cupiditate. Voluptatem, excepturi! Incidunt earum libero alias, veniam natus autem voluptatum aspernatur, neque repellendus totam at nisi tempore facilis nam mollitia! Neque laudantium sit, est, fuga iusto veniam totam consectetur inventore laboriosam beatae libero eius! Illo corporis placeat distinctio, aspernatur quam, possimus aut, ratione rem accusantium enim eos. Maiores quis reiciendis officia, dolore accusamus dolorum! Quidem sapiente accusamus harum adipisci quos, ex, amet placeat ea modi quam incidunt? Earum tempore cumque mollitia perferendis totam molestiae error laboriosam, dicta eum. Officia placeat id corporis tenetur tempora atque, quaerat possimus doloribus! Dolorum dicta alias corporis vel maxime sapiente quia quo enim quaerat veritatis? Quibusdam praesentium eum quia consequatur repudiandae obcaecati laborum neque nesciunt sequi cupiditate recusandae dolore at perferendis fugiat nemo dolorum quo, laboriosam sunt. Dolorum laborum officiis tempore ipsa, iusto iste quasi debitis eveniet vero, aliquid ipsum animi consequuntur. Vero corporis iusto ex voluptatum quia saepe inventore quas vitae veniam repudiandae. Aspernatur assumenda vero commodi debitis at harum, ipsum quibusdam quasi alias nulla ut, eum tempore voluptates dolorem eos fugit ipsam autem quam veritatis soluta deleniti aliquid iure praesentium. Provident nesciunt id consequuntur ea ad non tenetur eum nam cupiditate, ducimus perspiciatis.</p>
+    </div>
+</body>
+</html>
