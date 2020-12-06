@@ -10,7 +10,7 @@
     background-color: white;
 }
 #header {
-    background-color:lightgray;
+    background-color:#a0a0a0;
     border:2px solid #b0b0b0;
     color:#fff;
     display:flex;
@@ -25,7 +25,7 @@
     color:white;
     display:flex;
     justify-content: center;
-    height:100vh;
+    height:88vh;
     margin-bottom: 20px;
 }
 
@@ -90,8 +90,8 @@
     width:20vw;
 }
 #footer {
-    background-color:grey;
-    color:white;
+    background-color:pink;
+    color:#fff;
     display:flex;
     justify-content: center;
     align-items: center;
